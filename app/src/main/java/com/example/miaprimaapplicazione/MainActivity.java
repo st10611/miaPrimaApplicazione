@@ -16,9 +16,17 @@ public class MainActivity extends AppCompatActivity {
 
         //trova il bottone nel layout
         Button button = findViewById(R.id.button);
-
+        Button Login = findViewById(R.id.button2);
         //Assegna un listener al bottone
         button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
