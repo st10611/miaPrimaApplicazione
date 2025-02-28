@@ -58,16 +58,6 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
-        android:id="@+id/txt_Username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="70dp"
-        android:ems="10"
-        android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="@+id/textView11"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <EditText
         android:id="@+id/txte_Email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -94,7 +84,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginBottom="50dp"
         android:text="Data di nascita:"
-        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -112,7 +102,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="400dp"
+        android:layout_marginBottom="450dp"
         android:text="Password:"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -125,16 +115,6 @@
         android:layout_marginBottom="50dp"
         android:text="Nome:"
         app:layout_constraintBottom_toTopOf="@+id/textView10"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="50dp"
-        android:text="Username:"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
