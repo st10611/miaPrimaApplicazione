@@ -15,18 +15,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //trova il bottone nel layout
-        Button button = findViewById(R.id.button);
-        Button Login = findViewById(R.id.button2);
+        Button Login = findViewById(R.id.btn_Login);
+        Button Registrazione = findViewById(R.id.btn_Registrazione);
         //Assegna un listener al bottone
-        button.setOnClickListener(new View.OnClickListener() {
+        Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
         });
 
-        Login.setOnClickListener(new View.OnClickListener() {
+        Registrazione.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
