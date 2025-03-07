@@ -26,8 +26,10 @@ public class RegisterActivity extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(RegisterActivity.this, nome.getText() + " registrato",Toast.LENGTH_SHORT).show();
+                Utente utente = new Utente();
+
                 Log.d("Registrazione","Nome: "+ nome.getText().toString() + "Cognome: " + cognome.getText().toString() + "email: " + email.getText().toString() + "Password: " + password.getText().toString() + "Data di nascita: " + dataNascita.getText().toString());
+                Toast.makeText(RegisterActivity.this, nome.getText() + " registrato",Toast.LENGTH_SHORT).show();
             }
         });
 
